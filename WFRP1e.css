@@ -1,0 +1,395 @@
+/****** Colours ******/
+
+
+/****** Divs ******/
+/* Contains the whole page */
+.sheet-wrapper {
+    width: 800px;
+    background-color: white;
+    position: relative;
+}
+
+/****** Tabs ******/
+.sheet-section-1,
+.sheet-section-2,
+.sheet-section-3,
+.sheet-selector-1,
+.sheet-selector-2 {
+	display: none;
+}
+
+.sheet-tab1:checked ~ .sheet-section-1,
+.sheet-tab2:checked ~ .sheet-section-2,
+.sheet-tab3:checked ~ .sheet-section-3,
+.sheet-selector1:checked ~ .sheet-selector-1,
+.sheet-selector2:checked ~ .sheet-selector-2
+{
+	display: block;
+}
+
+.sheet-tablabel {
+    font-size: 14px;
+}
+
+/****** Profile ******/
+.sheet-profile {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px;
+}
+
+.sheet-profile-label2,
+.sheet-profile-item2 {
+    grid-column: span 2;
+}
+
+.sheet-profile-label3,
+.sheet-profile-item3 {
+    grid-column: span 3;
+}
+
+.sheet-profile-label4,
+.sheet-profile-item4 {
+    grid-column: span 4;
+}
+
+.sheet-profile-label5,
+.sheet-profile-item5 {
+    grid-column: span 5;
+}
+
+.sheet-profile-label,
+.sheet-profile-label2,
+.sheet-profile-label3,
+.sheet-profile-label4,
+.sheet-profile-label5 {
+    background-color: gray;
+    padding: 5px;
+    height: 20px;
+}
+
+.sheet-profile-item input[type=text],
+.sheet-profile-item2 input[type=text],
+.sheet-profile-item3 input[type=text],
+.sheet-profile-item4 input[type=text],
+.sheet-profile-item5 input[type=text] {
+    width: 100%;
+}
+
+/****** Characteristics ******/
+.sheet-char {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 170px 45px 45px 45px 45px 45px 45px 45px 45px 45px 45px 45px 45px 45px 45px;
+    padding-top: 25px;
+}
+
+.sheet-char-label {
+    background-color: gray;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sheet-char-item input[type=number] {
+    width: 100%;
+}
+
+.sheet-char-item input[type=number]::-webkit-inner-spin-button, 
+.sheet-char-item input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0;
+}
+
+.sheet-char button[type=roll] {
+    background-color: transparent;
+    font: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    background-image: none;
+    border: none;
+}
+
+.sheet-char button[type=roll]:hover {
+    color: white;
+}
+
+/****** Fate/Exp/Movement ******/
+.sheet-fate_exp_mvmt {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 100px 50px 100px 50px 50px 125px 100px 75px 75px;
+    padding-top: 25px;
+}
+
+.sheet-fate-label,
+.sheet-exp-label,
+.sheet-exp-head,
+.sheet-mvmt-label {
+    background-color: gray;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sheet-exp-head {
+    grid-column: span 2;
+}
+
+.sheet-fate_exp_mvmt input[type=number] {
+    width: 100%;
+    height: 100%;
+}
+
+/****** Skills ******/
+
+.sheet-columns {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 210px 50px 10px auto;
+    padding-top: 25px;
+}
+
+.sheet-columns-skills {
+    grid-column: span 2;
+}
+
+.sheet-columns-header {
+    font-weight: Bold;
+    font-size: 16px;
+}
+
+/****** Expanding Options ******/
+
+.sheet-expand .sheet-options-flag {
+    opacity: 0;    
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 18px;
+    height: 18px;
+    z-index: 2;
+}
+
+.sheet-expand .sheet-options-flag + span {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    white-space: nowrap;
+    width: 18px;
+    height: 18px;
+    font-size: 20px;
+    font-family: pictos;
+    color: #A0A0A0;
+    cursor: pointer;
+    margin-top: 0px;
+    display: none;
+}
+
+.sheet-expand .sheet-options-flag:checked + span {
+    display: block;
+}
+
+.sheet-options {
+    display: none;
+    border-top: 2px dashed #005c99;
+}
+
+.sheet-expand .sheet-options-flag:checked ~ .sheet-options {
+    display: inherit;
+}
+
+.sheet-expand:hover .sheet-options-flag + span {
+    display: block;
+}
+
+.sheet-expand input[type=text] {
+    width: 210px;
+}
+
+.sheet-expand input[type=number],
+.sheet-expand select {
+    width: 50px;
+}
+
+.sheet-expand input[type=number]::-webkit-inner-spin-button, 
+.sheet-expand input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0;
+}
+
+.sheet-display input[type=text] {
+    background-color: transparent;
+    border: none;
+    text-align: left;
+}
+
+/****** Tests ******/
+.sheet-tests {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 150px 100px auto;
+
+}
+
+.sheet-tests-header {
+    background-color: gray;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sheet-tests-item label {
+    font-size: 12px;
+    font-weight: normal;
+    display: inline;
+    text-align: left;
+}
+
+.sheet-tests-item input[type=checkbox] {
+    margin-left: -5px;
+}
+
+.sheet-tests button[type=roll] {
+    background-color: transparent;
+    font: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    background-image: none;
+    border: none;
+}
+
+.sheet-tests button[type=roll]:hover {
+    color: gray;
+}
+
+/****** Inventory ******/
+.sheet-inventory {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 200px 50px 200px 75px 75px 75px auto;
+}
+
+.sheet-inv-header {
+    background-color: gray;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sheet-inventory input[type=text],
+.sheet-inventory input[type=number] {
+    width: 100%;
+}
+
+/****** Money ******/
+.sheet-money {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 75px 75px 75px 75px auto 50px 50px 50px 10px 50px 50px 50px;
+    padding-top: 10px;
+}
+
+.sheet-money-subheader,
+.sheet-money-header,
+.sheet-money-headercalc {
+    background-color: gray;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sheet-money-header {
+    grid-column: span 4;
+}
+
+.sheet-money-headercalc {
+    grid-column: span 7;
+}
+
+.sheet-money-total {
+    grid-column: span 2;
+}
+
+.sheet-money-spacer {
+    width: 50px;
+}
+
+.sheet-money input[type=number],
+.sheet-money input[type=text],
+.sheet-money button[type=roll] {
+    width: 100%;
+}
+
+/****** Wounds ******/
+.sheet-stdwounds {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 125px 125px 125px;
+    padding-top: 10px;
+}
+
+.sheet-distwounds {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
+    padding-top: 10px;
+}
+
+.sheet-stdwounds-header,
+.sheet-distwounds-header {
+    background-color: gray;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sheet-stdwounds-item input[type=number],
+.sheet-stdwounds-item input[type=text],
+.sheet-distwounds-item input[type=number] {
+    width: 100%;
+}
+
+/****** Armour ******/
+.sheet-armour {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 100px 100px 100px 100px;
+    padding-top: 10px;
+}
+
+.sheet-armour-header {
+    background-color: gray;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/****** Roll Template ******/
+.sheet-rolltemplate-standard .sheet-template-container {
+    background-color: #996633;
+}
+
+.sheet-rolltemplate-standard .sheet-template-header {
+    width: 100%;
+    font-size: 14px;
+    background-color: #996633;
+    color: white;
+    padding: 5px;
+}
+
+.sheet-rolltemplate-standard .sheet-template-name {
+    width: 100%;
+    font-size: 10px;
+    background-color: #dfbe9f;
+    color: black;
+    padding: 2px 5px 2px 5px;
+}
+
+.sheet-rolltemplate-standard .sheet-template-result {
+    width: 100%;
+    font-size: 12px;
+    color: black;
+    background-color: #f9f2ec;
+    padding: 5px;
+}
