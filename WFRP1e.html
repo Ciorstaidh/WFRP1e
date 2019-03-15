@@ -1,0 +1,881 @@
+<div class="wrapper">
+
+        <input type='radio' class='sheet-tab sheet-tab1' name='attr_sheetTab' value='1' checked /><span class="tablabel" data-i18n="Core-u">Core</span>
+	    <input type='radio' class='sheet-tab sheet-tab2' name='attr_sheetTab' value='2' /><span class="tablabel" data-i18n="Inventory-u">Inventory</span>
+	    <input type='radio' class='sheet-tab sheet-tab3' name='attr_sheetTab' value='3' /><span class="tablabel" data-i18n="Combat-u">Combat</span>
+	
+	<!-- Core Page -->
+	<div class='sheet-section sheet-section-1'>
+		<div class="profile">
+            <div class="profile-label3"><label for="attr_character_name"><span data-i18n="Name-u">Name</span></label></div>
+            <div class="profile-label"><label for="attr_race"><span data-i18n="Race-u">Race</span></label></div>
+            <div class="profile-label"><label for="attr_gender"><span data-i18n="Gender-u">Gender</span></label></div>
+            <div class="profile-label3"><label for="attr_careerclass"><span data-i18n="Career Class-u">Career Class</span></label></div>
+            <div class="profile-label2"><label for="attr_alignment"><span data-i18n="Alignment-u">Alignment</span></label></div>
+            
+            <div class="profile-item3"><input type="text" name="attr_character_name"></div>
+            <div class="profile-item"><input type="text" name="attr_race"></div>
+            <div class="profile-item"><input type="text" name="attr_gender"></div>
+            <div class="profile-item3"><input type="text" name="attr_careerclass"></div>
+            <div class="profile-item2"><input type="text" name="attr_alignment"></div>
+            
+            <div class="profile-label"><label for="attr_age"><span data-i18n="Age-u">Age</span></label></div>
+            <div class="profile-label"><label for="attr_height"><span data-i18n="Height-u">Height</span></label></div>
+            <div class="profile-label"><label for="attr_weight"><span data-i18n="Weight-u">Weight</span></label></div>
+            <div class="profile-label"><label for="attr_hair"><span data-i18n="Hair-u">Hair</span></label></div>
+            <div class="profile-label"><label for="attr_eyes"><span data-i18n="Eyes-u">Eyes</span></label></div>
+            <div class="profile-label5"><label for="attr_description"><span data-i18n="Description-u">Description</span></label></div>
+            
+            <div class="profile-item"><input type="text" name="attr_age"></div>
+            <div class="profile-item"><input type="text" name="attr_height"></div>
+            <div class="profile-item"><input type="text" name="attr_weight"></div>
+            <div class="profile-item"><input type="text" name="attr_hair"></div>
+            <div class="profile-item"><input type="text" name="attr_eyes"></div>
+            <div class="profile-item5"><input type="text" name="attr_description"></div>
+            
+            <div class="profile-label3"><label for="attr_currentcareer"><span data-i18n="Current Career-u">Current Career</span></label></div>
+            <div class="profile-label3"><label for="attr_careerpath"><span data-i18n="Career Path-u">Career Path</span></label></div>
+            <div class="profile-label4"><label for="attr_careerexits"><span data-i18n="Career Exits-u">Career Exits</span></label></div>
+            
+            <div class="profile-item3"><input type="text" name="attr_currentcareer"></div>
+            <div class="profile-item3"><input type="text" name="attr_careerpath"></div>
+            <div class="profile-item4"><input type="text" name="attr_careerexits"></div>
+        </div>
+        
+        <div class="fate_exp_mvmt">
+            <div class="fate-label"><span data-i18n="Fate-u">Fate</span></div>
+            <div></div>
+            <div class="exp-head"><span data-i18n="Experience-u">Experience</span></div>
+            <div></div>
+            <div class="mvmt-label"><span data-i18n="Movement Rate-u">Movement Rate</span></div>
+            <div class="mvmt-label"><span data-i18n="Ft./10 Secs-u">Ft./10 Secs</span></div>
+            <div class="mvmt-label"><span data-i18n="Ft./ Min-u">Ft./ Min</span></div>
+            <div class="mvmt-label"><span data-i18n="M.P.H.-u">M.P.H.</span></div>
+            
+            <div class="fate"><input type="number" name="attr_fate"></div>
+            <div></div>
+            <div class="exp-label"><span data-i18n="Earned-u">Earned</span></div>
+            <div class="exp"><input type="number" name="attr_earnedxp"></div>
+            <div></div>
+            <div class="mvmt-label"><span data-i18n="Cautious-u">Cautious</span></div>
+            <div class="mvmt"><input type="number" name="attr_mvmt_rnd_cautious"></div>
+            <div class="mvmt"><input type="number" name="attr_mvmt_min_cautious"></div>
+            <div class="mvmt"><input type="number" name="attr_mvmt_mph_cautious" step="0.01"></div>
+            
+            <div></div>
+            <div></div>
+            <div class="exp-label"><span data-i18n="Spent-u">Spent</span></div>
+            <div class="exp"><input type="number" name="attr_spentxp"></div>
+            <div></div>
+            <div class="mvmt-label"><span data-i18n="Standard-u">Standard</span></div>
+            <div class="mvmt"><input type="number" name="attr_mvmt_rnd_standard"></div>
+            <div class="mvmt"><input type="number" name="attr_mvmt_min_standard"></div>
+            <div class="mvmt"><input type="number" name="attr_mvmt_mph_standard" step="0.01"></div>
+            
+            <div></div>
+            <div></div>
+            <div class="exp-label"><span data-i18n="Available-u">Available</span></div>
+            <div class="exp"><input type="number" name="attr_availablexp"></div>
+            <div></div>
+            <div class="mvmt-label"><span data-i18n="Running-u">Running</span></div>
+            <div class="mvmt"><input type="number" name="attr_mvmt_rnd_running"></div>
+            <div class="mvmt"><input type="number" name="attr_mvmt_min_running"></div>
+            <div class="mvmt"><input type="number" name="attr_mvmt_mph_running" step="0.01"></div>
+        </div>
+        
+        <div class="char">
+            <div class="char-label"></div>
+            <div class="char-label"><span data-i18n="M-u">M</span></div>
+            <div class="char-label"><button type="roll" name="roll_WS" value="&{template:standard}{{rname=^{Weapon Skill}}}{{name=@{character_name}}}{{against=[[@{CP_WS}[WS] + ?{Modifier|0}[MOD]]]}}{{dice=[[1d100]]}}{{perfect=[[@{CP_WS}[WS] + ?{Modifier|0}[MOD] - 30]]}}{{botch=[[@{CP_WS}[WS] + ?{Modifier|0}[MOD] + 30]]}}{{fumble=[[@{CP_WS}[WS] + ?{Modifier|0}[MOD] + 60]]}}"><span data-i18n="WS-u">WS</span></button></div>
+            <div class="char-label"><button type="roll" name="roll_BS" value="&{template:standard}{{rname=^{Ballistic Skill}}}{{name=@{character_name}}}{{against=[[@{CP_BS}[BS] + ?{Modifier|0}[MOD]]]}}{{dice=[[1d100]]}}{{perfect=[[@{CP_BS}[BS] + ?{Modifier|0}[MOD] - 30]]}}{{botch=[[@{CP_BS}[BS] + ?{Modifier|0}[MOD] + 30]]}}{{fumble=[[@{CP_BS}[BS] + ?{Modifier|0}[MOD] + 60]]}}"><span data-i18n="BS-u">BS</span></button></div>
+            <div class="char-label"><button type="roll" name="roll_S" value="&{template:standard}{{rname=^{Strength}}}{{name=@{character_name}}}{{against=[[@{CP_S}[S] + ?{Modifier|0}[MOD]]]}}{{dice=[[1d100]]}}{{perfect=[[@{CP_S}[S] + ?{Modifier|0}[MOD] - 30]]}}{{botch=[[@{CP_S}[S] + ?{Modifier|0}[MOD] + 30]]}}{{fumble=[[@{CP_S}[S] + ?{Modifier|0}[MOD] + 60]]}}"><span data-i18n="S-u">S</span></button></div>
+            <div class="char-label"><button type="roll" name="roll_T" value="&{template:standard}{{rname=^{Toughness}}}{{name=@{character_name}}}{{against=[[@{CP_T}[T] + ?{Modifier|0}[MOD]]]}}{{dice=[[1d100]]}}{{perfect=[[@{CP_T}[T] + ?{Modifier|0}[MOD] - 30]]}}{{botch=[[@{CP_T}[T] + ?{Modifier|0}[MOD] + 30]]}}{{fumble=[[@{CP_T}[T] + ?{Modifier|0}[MOD] + 60]]}}"><span data-i18n="T-u">T</span></button></div>
+            <div class="char-label"><span data-i18n="W-u">W</span></div>
+            <div class="char-label"><button type="roll" name="roll_I" value="&{template:standard}{{rname=^{Initiative}}}{{name=@{character_name}}}{{against=[[@{CP_I}[I] + ?{Modifier|0}[MOD]]]}}{{dice=[[1d100]]}}{{perfect=[[@{CP_I}[I] + ?{Modifier|0}[MOD] - 30]]}}{{botch=[[@{CP_I}[I] + ?{Modifier|0}[MOD] + 30]]}}{{fumble=[[@{CP_I}[I] + ?{Modifier|0}[MOD] + 60]]}}"><span data-i18n="I-u">I</span></button></div>
+            <div class="char-label"><span data-i18n="A-u">A</span></div>
+            <div class="char-label"><button type="roll" name="roll_Dex" value="&{template:standard}{{rname=^{Dexterity}}}{{name=@{character_name}}}{{against=[[@{CP_Dex}[Dex] + ?{Modifier|0}[MOD]]]}}{{dice=[[1d100]]}}{{perfect=[[@{CP_Dex}[Dex] + ?{Modifier|0}[MOD] - 30]]}}{{botch=[[@{CP_Dex}[Dex] + ?{Modifier|0}[MOD] + 30]]}}{{fumble=[[@{CP_Dex}[Dex] + ?{Modifier|0}[MOD] + 60]]}}"><span data-i18n="Dex-u">Dex</span></button></div>
+            <div class="char-label"><button type="roll" name="roll_Ld" value="&{template:standard}{{rname=^{Leadership}}}{{name=@{character_name}}}{{against=[[@{CP_Ld}[Ld] + ?{Modifier|0}[MOD]]]}}{{dice=[[1d100]]}}{{perfect=[[@{CP_Ld}[Ld] + ?{Modifier|0}[MOD] - 30]]}}{{botch=[[@{CP_Ld}[Ld] + ?{Modifier|0}[MOD] + 30]]}}{{fumble=[[@{CP_Ld}[Ld] + ?{Modifier|0}[MOD] + 60]]}}"><span data-i18n="Ld-u">Ld</span></button></div>
+            <div class="char-label"><button type="roll" name="roll_Int" value="&{template:standard}{{rname=^{Intelligence}}}{{name=@{character_name}}}{{against=[[@{CP_Int}[Int] + ?{Modifier|0}[MOD]]]}}{{dice=[[1d100]]}}{{perfect=[[@{CP_Int}[Int] + ?{Modifier|0}[MOD] - 30]]}}{{botch=[[@{CP_Int}[Int] + ?{Modifier|0}[MOD] + 30]]}}{{fumble=[[@{CP_Int}[Int] + ?{Modifier|0}[MOD] + 60]]}}"><span data-i18n="Int-u">Int</span></button></div>
+            <div class="char-label"><button type="roll" name="roll_Cl" value="&{template:standard}{{rname=^{Cool}}}{{name=@{character_name}}}{{against=[[@{CP_Cl}[Cl] + ?{Modifier|0}[MOD]]]}}{{dice=[[1d100]]}}{{perfect=[[@{CP_Cl}[Cl] + ?{Modifier|0}[MOD] - 30]]}}{{botch=[[@{CP_Cl}[Cl] + ?{Modifier|0}[MOD] + 30]]}}{{fumble=[[@{CP_Cl}[Cl] + ?{Modifier|0}[MOD] + 60]]}}"><span data-i18n="Cl-u">Cl</span></button></div>
+            <div class="char-label"><button type="roll" name="roll_WP" value="&{template:standard}{{rname=^{Will Power}}}{{name=@{character_name}}}{{against=[[@{CP_WP}[WP] + ?{Modifier|0}[MOD]]]}}{{dice=[[1d100]]}}{{perfect=[[@{CP_WP}[WP] + ?{Modifier|0}[MOD] - 30]]}}{{botch=[[@{CP_WP}[WP] + ?{Modifier|0}[MOD] + 30]]}}{{fumble=[[@{CP_WP}[WP] + ?{Modifier|0}[MOD] + 60]]}}"><span data-i18n="WP-u">WP</span></button></div>
+            <div class="char-label"><button type="roll" name="roll_Fel" value="&{template:standard}{{rname=^{Fellowship}}}{{name=@{character_name}}}{{against=[[@{CP_Fel}[Fel] + ?{Modifier|0}[MOD]]]}}{{dice=[[1d100]]}}{{perfect=[[@{CP_Fel}[Fel] + ?{Modifier|0}[MOD] - 30]]}}{{botch=[[@{CP_Fel}[Fel] + ?{Modifier|0}[MOD] + 30]]}}{{fumble=[[@{CP_Fel}[Fel] + ?{Modifier|0}[MOD] + 60]]}}"><span data-i18n="Fel-u">Fel</span></button></div>
+            
+            <div class="char-label"><span data-i18n="Starter Profile-u">Starter Profile</span></div>
+            <div class="char-item"><input type="number" name="attr_SP_M"></div>
+            <div class="char-item"><input type="number" name="attr_SP_WS"></div>
+            <div class="char-item"><input type="number" name="attr_SP_BS"></div>
+            <div class="char-item"><input type="number" name="attr_SP_S"></div>
+            <div class="char-item"><input type="number" name="attr_SP_T"></div>
+            <div class="char-item"><input type="number" name="attr_SP_W"></div>
+            <div class="char-item"><input type="number" name="attr_SP_I"></div>
+            <div class="char-item"><input type="number" name="attr_SP_A"></div>
+            <div class="char-item"><input type="number" name="attr_SP_Dex"></div>
+            <div class="char-item"><input type="number" name="attr_SP_Ld"></div>
+            <div class="char-item"><input type="number" name="attr_SP_Int"></div>
+            <div class="char-item"><input type="number" name="attr_SP_Cl"></div>
+            <div class="char-item"><input type="number" name="attr_SP_WP"></div>
+            <div class="char-item"><input type="number" name="attr_SP_Fel"></div>
+            
+            <div class="char-label"><span data-i18n="Advance Scheme-u">Advance Scheme</span></div>
+            <div class="char-item"><input type="number" name="attr_AS_M"></div>
+            <div class="char-item"><input type="number" name="attr_AS_WS"></div>
+            <div class="char-item"><input type="number" name="attr_AS_BS"></div>
+            <div class="char-item"><input type="number" name="attr_AS_S"></div>
+            <div class="char-item"><input type="number" name="attr_AS_T"></div>
+            <div class="char-item"><input type="number" name="attr_AS_W"></div>
+            <div class="char-item"><input type="number" name="attr_AS_I"></div>
+            <div class="char-item"><input type="number" name="attr_AS_A"></div>
+            <div class="char-item"><input type="number" name="attr_AS_Dex"></div>
+            <div class="char-item"><input type="number" name="attr_AS_Ld"></div>
+            <div class="char-item"><input type="number" name="attr_AS_Int"></div>
+            <div class="char-item"><input type="number" name="attr_AS_Cl"></div>
+            <div class="char-item"><input type="number" name="attr_AS_WP"></div>
+            <div class="char-item"><input type="number" name="attr_AS_Fel"></div>
+            
+            <div class="char-label"><span data-i18n="Advances Taken-u">Advances Taken</span></div>
+            <div class="char-item"><input type="number" name="attr_AT_M"></div>
+            <div class="char-item"><input type="number" name="attr_AT_WS"></div>
+            <div class="char-item"><input type="number" name="attr_AT_BS"></div>
+            <div class="char-item"><input type="number" name="attr_AT_S"></div>
+            <div class="char-item"><input type="number" name="attr_AT_T"></div>
+            <div class="char-item"><input type="number" name="attr_AT_W"></div>
+            <div class="char-item"><input type="number" name="attr_AT_I"></div>
+            <div class="char-item"><input type="number" name="attr_AT_A"></div>
+            <div class="char-item"><input type="number" name="attr_AT_Dex"></div>
+            <div class="char-item"><input type="number" name="attr_AT_Ld"></div>
+            <div class="char-item"><input type="number" name="attr_AT_Int"></div>
+            <div class="char-item"><input type="number" name="attr_AT_Cl"></div>
+            <div class="char-item"><input type="number" name="attr_AT_WP"></div>
+            <div class="char-item"><input type="number" name="attr_AT_Fel"></div>
+            
+            <div class="char-label"><span data-i18n="Current Profile-u">Current Profile</span></div>
+            <div class="char-item"><input type="number" name="attr_CP_M"></div>
+            <div class="char-item"><input type="number" name="attr_CP_WS"></div>
+            <div class="char-item"><input type="number" name="attr_CP_BS"></div>
+            <div class="char-item"><input type="number" name="attr_CP_S"></div>
+            <div class="char-item"><input type="number" name="attr_CP_T"></div>
+            <div class="char-item"><input type="number" name="attr_CP_W"></div>
+            <div class="char-item"><input type="number" name="attr_CP_I"></div>
+            <div class="char-item"><input type="number" name="attr_CP_A"></div>
+            <div class="char-item"><input type="number" name="attr_CP_Dex"></div>
+            <div class="char-item"><input type="number" name="attr_CP_Ld"></div>
+            <div class="char-item"><input type="number" name="attr_CP_Int"></div>
+            <div class="char-item"><input type="number" name="attr_CP_Cl"></div>
+            <div class="char-item"><input type="number" name="attr_CP_WP"></div>
+            <div class="char-item"><input type="number" name="attr_CP_Fel"></div>
+            
+        </div>
+        
+        <div class="columns">
+            
+            <div class="columns-header"><span data-i18n="Skill-u">Skill</span></div>
+            <div class="columns-header"><span data-i18n="Mod-u">Mod</span></div>
+            <div class="columns-spacer"></div>
+            <div class="columns-header"><span data-i18n="Tests-u">Tests</span></div>
+            
+            <div class="columns-skills">
+                <fieldset class="repeating_skills">
+                    <input type="text" name="attr_skillname" placeholder="Skill Name" /><input type="number" name="attr_skillmod">
+                </fieldset>
+            </div>
+            <div class="columns-spacer"></div>
+            <div class="tests">
+                <div class="tests-header"><span data-i18n="Action-u">Action</span></div>
+                <div class="tests-header"><span data-i18n="Test Against-u">Test Against</span></div>
+                <div class="tests-header"><span data-i18n="Relevant Skills-u">Relevant Skills</span></div>
+                
+                <div class="tests-item"><button type="roll" name="roll_animosity" value="&{template:standard}{{rname=^{Animosity-u}}}{{name=@{character_name}}}{{against=[[@{CP_Cl}[Cl] + ?{Modifier|0}]]}}{{dice=[[1d100]]}}{{perfect=[[@{CP_Cl}[Cl] + ?{Modifier|0} - 30]]}}{{botch=[[@{CP_Cl}[Cl] + ?{Modifier|0} + 30]]}}{{fumble=[[@{CP_Cl}[Cl] + ?{Modifier|0} + 60]]}}"><span data-i18n="Animosity-u">Animosity</span></button></div>
+                <div class="tests-item"><span data-i18n="Cl-u">Cl</span></div>
+                <div class="tests-item"></div>
+                
+                <div class="tests-item"><button type="roll" name="roll_bargain" value="&{template:standard}{{rname=^{Bargain-u}}}{{name=@{character_name}}}{{against=[[@{CP_Fel}[Fel] + @{bgn_charm}[Charm] + @{bgn_haggle}[Haggle] + @{bgn_seduction}[Seduction] + ?{Modifier|0}]]}}{{dice=[[1d100]]}}{{perfect=[[@{CP_Fel}[Fel] + @{bgn_charm}[Charm] + @{bgn_haggle}[Haggle] + @{bgn_seduction}[Seduction] + ?{Modifier|0} - 30]]}}{{botch=[[@{CP_Fel}[Fel] + @{bgn_charm}[Charm] + @{bgn_haggle}[Haggle] + @{bgn_seduction}[Seduction] + ?{Modifier|0} + 30]]}}{{fumble=[[@{CP_Fel}[Fel] + @{bgn_charm}[Charm] + @{bgn_haggle}[Haggle] + @{bgn_seduction}[Seduction] + ?{Modifier|0} + 60]]}}"><span data-i18n="Bargain-u">Bargain</span></button></div>
+                <div class="tests-item"><span data-i18n="Fel-u">Fel</span></div>
+                <div class="tests-item"><label type="lblSkill"><span data-i18n="Charm-u">Charm</span></label><input type="checkbox" name="attr_bgn_charm" value="10" />, <label type="lblSkill"><span data-i18n="Haggle-u">Haggle</span></label><input type="checkbox" name="attr_bgn_haggle" value="10" />, <label type="lblSkill"><span data-i18n="Seduction-u">Seduction</span></label><input type="checkbox" name="attr_bgn_seduction" value="10" /></div>
+                
+                <div class="tests-item"><button type="roll" name="roll_bluff" value="&{template:standard}{{rname=^{Bluff-u}}}{{name=@{character_name}}}{{against=[[@{CP_Fel}[Fel] + @{bluff_acting}[Acting] + @{bluff_charm}[Charm] + @{bluff_clown}[Clown] + @{bluff_jester}[Jester] + @{bluff_seduction}[Seduction] + @{bluff_wit}[Wit] + ?{Modifier|0}]]}}{{dice=[[1d100]]}}{{perfect=[[@{CP_Fel}[Fel] + @{bluff_acting}[Acting] + @{bluff_charm}[Charm] + @{bluff_clown}[Clown] + @{bluff_jester}[Jester] + @{bluff_seduction}[Seduction] + @{bluff_wit}[Wit] + ?{Modifier|0} - 30]]}}{{botch=[[@{CP_Fel}[Fel] + @{bluff_acting}[Acting] + @{bluff_charm}[Charm] + @{bluff_clown}[Clown] + @{bluff_jester}[Jester] + @{bluff_seduction}[Seduction] + @{bluff_wit}[Wit] + ?{Modifier|0} + 30]]}}{{fumble=[[@{CP_Fel}[Fel] + @{bluff_acting}[Acting] + @{bluff_charm}[Charm] + @{bluff_clown}[Clown] + @{bluff_jester}[Jester] + @{bluff_seduction}[Seduction] + @{bluff_wit}[Wit] + ?{Modifier|0} + 60]]}}"><span data-i18n="Bluff-u">Bluff</span></button></div>
+                <div class="tests-item"><span data-i18n="Fel-u">Fel</span></div>
+                <div class="tests-item"><label type="lblSkill"><span data-i18n="Acting-u">Acting</span></label><input type="checkbox" name="attr_bluff_acting" value="15" />, <label type="lblSkill"><span data-i18n="Charm-u">Charm</span></label><input type="checkbox" name="attr_bluff_charm" value="10" />, <label type="lblSkill"><span data-i18n="Clown-u">Clown</span></label><input type="checkbox" name="attr_bluff_clown" value="10" />, <label type="lblSkill"><span data-i18n="Jester-u">Jester</span></label><input type="checkbox" name="attr_bluff_jester" value="20" />, <label type="lblSkill"><span data-i18n="Seduction-u">Seduction</span></label><input type="checkbox" name="attr_bluff_seduction" value="10" />, <label type="lblSkill"><span data-i18n="Wit-u">Wit</span></label><input type="checkbox" name="attr_bluff_wit" value="10" /></div>
+                
+                <div class="tests-item"><span data-i18n="Boat Handling-u">Boat Handling</span></div>
+                <div class="tests-item"><span data-i18n="(Int + I)/2-u">(Int + I)/2</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Bribe-u">Bribe</span></div>
+                <div class="tests-item"><span data-i18n="100 - WP-u">100 - WP</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Busk-u">Busk</span></div>
+                <div class="tests-item"><span data-i18n="Fel-u">Fel</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Construct-u">Construct</span></div>
+                <div class="tests-item"><span data-i18n="Dex-u">Dex</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Disease-u">Disease</span></div>
+                <div class="tests-item"><span data-i18n="T x 10-u">T x 10</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Employment-u">Employment</span></div>
+                <div class="tests-item"><span data-i18n="special-u">special</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Estimate-u">Estimate</span></div>
+                <div class="tests-item"><span data-i18n="Int-u">Int</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Fall-u">Fall</span></div>
+                <div class="tests-item"><span data-i18n="special-u">special</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Fear-u">Fear</span></div>
+                <div class="tests-item"><span data-i18n="Cl-u">Cl</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Frenzy-u">Frenzy</span></div>
+                <div class="tests-item"><span data-i18n="Cl-u">Cl</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Gambling-u">Gambling</span></div>
+                <div class="tests-item"><span data-i18n="special-u">special</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Gossip-u">Gossip</span></div>
+                <div class="tests-item"><span data-i18n="Fel-u">Fel</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Hatred-u">Hatred</span></div>
+                <div class="tests-item"><span data-i18n="Cl-u">Cl</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Hide-u">Hide</span></div>
+                <div class="tests-item"><span data-i18n="I + Cl - enemy I-u">I + Cl - enemy I</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Hypnotism-u">Hypnotism</span></div>
+                <div class="tests-item"><span data-i18n="WP-u">WP</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Interrogate-u">Interrogate</span></div>
+                <div class="tests-item"><span data-i18n="WP-u">WP</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Jump-u">Jump</span></div>
+                <div class="tests-item"><span data-i18n="special-u">special</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Leap-u">Leap</span></div>
+                <div class="tests-item"><span data-i18n="special-u">special</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Listen-u">Listen</span></div>
+                <div class="tests-item"><span data-i18n="Soft: 30% / Normal: 60% / Loud: 100%-u">Soft: 30% / Normal: 60% / Loud: 100%</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Loyalty-u">Loyalty</span></div>
+                <div class="tests-item"><span data-i18n="Ld-u">Ld</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Magic-u">Magic</span></div>
+                <div class="tests-item"><span data-i18n="WP-u">WP</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Observe-u">Observe</span></div>
+                <div class="tests-item"><span data-i18n="I-u">I</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Pick Lock-u">Pick Lock</span></div>
+                <div class="tests-item"><span data-i18n="Dex - lock rating-u">Dex - lock rating</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Pick Pocket-u">Pick Pocket</span></div>
+                <div class="tests-item"><span data-i18n="Dex-u">Dex</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Poison-u">Poison</span></div>
+                <div class="tests-item"><span data-i18n="T x 10-u">T x 10</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Problem Solving-u">Problem Solving</span></div>
+                <div class="tests-item"><span data-i18n="Int-u">Int</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Reaction-u">Reaction</span></div>
+                <div class="tests-item"><span data-i18n="I-u">I</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Risk-u">Risk</span></div>
+                <div class="tests-item"><span data-i18n="Base 50%-u">Base 50%</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Search-u">Search</span></div>
+                <div class="tests-item"><span data-i18n="I-u">I</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Rapid Search-u">Rapid Search</span></div>
+                <div class="tests-item"><span data-i18n="I-u">I</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Sneak-u">Sneak</span></div>
+                <div class="tests-item"><span data-i18n="30%">30%</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Strength-u">Strength</span></div>
+                <div class="tests-item"><span data-i18n="S x 10-u">S x 10</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Stupidity-u">Stupidity</span></div>
+                <div class="tests-item"><span data-i18n="Int-u">Int</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Terror-u">Terror</span></div>
+                <div class="tests-item"><span data-i18n="Cl-u">Cl</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+                
+                <div class="tests-item"><span data-i18n="Understand Language-u">Understand Language</span></div>
+                <div class="tests-item"><span data-i18n="Int-u">Int</span></div>
+                <div class="tests-item"></div>
+                <div class="tests-button"></div>
+            </div>
+            
+        </div>
+        
+    </div>
+	
+	<!-- Inventory Page -->
+	<div class='sheet-section sheet-section-2'>
+        
+        <div class="inventory">
+            <div class="inv-header"><span data-i18n="Item-u">Item</span></div>
+            <div class="inv-header"><span data-i18n="Weight-u">Weight</span></div>
+            <div class="inv-header"><span data-i18n="Location-u">Location</span></div>
+            <div class="inv-header"><span data-i18n="Equipped-u">Equipped</span></div>
+            <div class="inv-header"><span data-i18n="Packed-u">Packed</span></div>
+            <div class="inv-header"><span data-i18n="Other-u">Other</span></div>
+            <div class="inv-header"><span data-i18n="Calc. Weight-u">Calc. Weight</span></div>
+        </div>
+            
+        <fieldset class="repeating_inventory">
+            <div class="inventory">
+                <div class="inv-item"><input type="text" name="attr_invItem"></div>
+                <div class="inv-item"><input type="number" name="attr_invWeight"></div>
+                <div class="inv-item"><input type="text" name="attr_invLocation"></div>
+                <div class="inv-item"><input type="radio" name="attr_invEquip" value=1 checked></div>
+                <div class="inv-item"><input type="radio" name="attr_invEquip" value=0.5></div>
+                <div class="inv-item"><input type="radio" name="attr_invEquip" value=0></div>
+                <div class="inv-item"><input type="number" name="attr_invCalcWeight"></div>
+            </div>
+        </fieldset>
+        
+        <label><span data-i18n="Total Weight-u">Total Weight</span></label><input type="number" name="attr_invTotalWeight">
+        
+        
+        <div class="money">
+            <div class="money-header"><span data-i18n="Money-u">Money</span></div>
+            <div class="money-spacer"></div>
+            <div class="money-spacer"></div>
+            <div class="money-spacer"></div>
+            <div class="money-spacer"></div>
+            <div class="money-spacer"></div>
+            <div class="money-spacer"></div>
+            <div class="money-spacer"></div>
+            <div class="money-spacer"></div>
+            
+            <div class="money-subheader"><span data-i18n="Crowns-u">Crowns</span></div>
+            <div class="money-subheader"><span data-i18n="Shillings-u">Shillings</span></div>
+            <div class="money-subheader"><span data-i18n="Pennies-u">Pennies</span></div>
+            <div class="money-subheader"><span data-i18n="Weight-u">Weight</span></div>
+            <div class="money-spacer"></div>
+            <div class="money-spacer"></div>
+            <div class="money-spacer"></div>
+            <div class="money-spacer"></div>
+            <div class="money-spacer"></div>
+            <div class="money-spacer"></div>
+            <div class="money-spacer"></div>
+            <div class="money-spacer"></div>
+            
+            <div class="money-item"><input type="number" name="attr_crowns"></div>
+            <div class="money-item"><input type="number" name="attr_shillings"></div>
+            <div class="money-item"><input type="number" name="attr_pennies"></div>
+            <div class="money-item"><input type="number" name="attr_money_weight"></div>
+            <div class="money-spacer"></div>
+            <div class="money-spacer"></div>
+            <div class="money-spacer"></div>
+            <div class="money-spacer"></div>
+            <div class="money-spacer"></div>
+            <div class="money-spacer"></div>
+            <div class="money-spacer"></div>
+            <div class="money-spacer"></div>
+            
+            <div class="money-subheader"><span data-i18n="Total-u">Total</span></div>
+            <div class="money-total"><input type="text" name="attr_money_total" readonly></div>
+            <div class="money-item"></div>
+            <div class="money-spacer"></div>
+            <div class="money-spacer"></div>
+            <div class="money-spacer"></div>
+            <div class="money-spacer"></div>
+            <div class="money-spacer"></div>
+            <div class="money-spacer"></div>
+            <div class="money-spacer"></div>
+            <div class="money-spacer"></div>
+            <div class="money-spacer"></div>
+        </div>
+	</div>
+	
+	<!-- Combat Page -->
+	<div class='sheet-section sheet-section-3'>
+	    <input type='radio' class='sheet-selector sheet-selector1' name='attr_sheetSelector' value='1' checked /><span class="selectorlabel" data-i18n="Standard Wound Tracking-u">Standard Wound Tracking</span>
+	    <input type='radio' class='sheet-selector sheet-selector2' name='attr_sheetSelector' value='2' /><span class="selectorlabel" data-i18n="Distributed Damage-u">Distributed Damage</span>
+	    
+	    <!-- Standard Wounds -->
+	    <div class='sheet-section sheet-selector-1'>
+	        <div class="stdwounds">
+	            <div class="stdwounds-header"><span data-i18n="Current Wounds-u">Current Wounds</span></div>
+	            <div class="stdwounds-header"><span data-i18n="Max Wounds-u">Max Wounds</span></div>
+	            <div class="stdwounds-header"><span data-i18n="Wound Level-u">Wound Level</span></div>
+	            
+	            <div class="stdwounds-item"><input type="number" name="attr_CW" /></div>
+	            <div class="stdwounds-item"><input type="number" name="attr_CW_max" /></div>
+	            <div class="stdwounds-item"><input type="text" name="attr_WT" /></div>
+	        </div>
+	    </div>
+	    
+	    <!-- Distributed Damage -->
+	    <div class='sheet-section sheet-selector-2'>
+	        <div class="distwounds">
+	            <div class="distwounds-header"></div>
+	            <div class="distwounds-header"><span data-i18n="Head-u">Head</span></div>
+	            <div class="distwounds-header"><span data-i18n="Right Arm-u">Right Arm</span></div>
+	            <div class="distwounds-header"><span data-i18n="Left Arm-u">Left Arm</span></div>
+	            <div class="distwounds-header"><span data-i18n="Body-u">Body</span></div>
+	            <div class="distwounds-header"><span data-i18n="Right Leg-u">Right Leg</span></div>
+	            <div class="distwounds-header"><span data-i18n="Left Leg-u">Left Leg</span></div>
+	            
+	            <div class="distwounds-header"><span data-i18n="Current-u">Current</span></div>
+	            <div class="distwounds-item"><input type="number" name="attr_wdshead" /></div>
+	            <div class="distwounds-item"><input type="number" name="attr_wdsrarm" /></div>
+	            <div class="distwounds-item"><input type="number" name="attr_wdslarm" /></div>
+	            <div class="distwounds-item"><input type="number" name="attr_wdsbody" /></div>
+	            <div class="distwounds-item"><input type="number" name="attr_wdsrleg" /></div>
+	            <div class="distwounds-item"><input type="number" name="attr_wdslleg" /></div>
+	            
+	            <div class="distwounds-header"><span data-i18n="Max-u">Max</span></div>
+	            <div class="distwounds-item"><input type="number" name="attr_wdshead_max" /></div>
+	            <div class="distwounds-item"><input type="number" name="attr_wdsrarm_max" /></div>
+	            <div class="distwounds-item"><input type="number" name="attr_wdslarm_max" /></div>
+	            <div class="distwounds-item"><input type="number" name="attr_wdsbody_max" /></div>
+	            <div class="distwounds-item"><input type="number" name="attr_wdsrleg_max" /></div>
+	            <div class="distwounds-item"><input type="number" name="attr_wdslleg_max" /></div>
+	    </div>
+    </div>
+    
+        <div class='armour'>
+            <div class='armour-header'>Area Covered</div>
+            <div class='armour-header'>Armour Type</div>
+            <div class='armour-header'>AP</div>
+            <div class='armour-header'>Enc.</div>
+            
+            <div class='armour-header'>Head 1</div>
+            <div class='armour-item'></div>
+            <div class='armour-item'></div>
+            <div class='armour-item'></div>
+            
+            <div class='armour-header'>Head 2</div>
+            <div class='armour-item'></div>
+            <div class='armour-item'></div>
+            <div class='armour-item'></div>
+            
+            <div class='armour-header'>Body 1</div>
+            <div class='armour-item'></div>
+            <div class='armour-item'></div>
+            <div class='armour-item'></div>
+            
+            <div class='armour-header'>Body 2</div>
+            <div class='armour-item'></div>
+            <div class='armour-item'></div>
+            <div class='armour-item'></div>
+            
+            <div class='armour-header'>Right Arm 1</div>
+            <div class='armour-item'></div>
+            <div class='armour-item'></div>
+            <div class='armour-item'></div>
+            
+            <div class='armour-header'>Right Arm 2</div>
+            <div class='armour-item'></div>
+            <div class='armour-item'></div>
+            <div class='armour-item'></div>
+            
+            <div class='armour-header'>Left Arm 1</div>
+            <div class='armour-item'></div>
+            <div class='armour-item'></div>
+            <div class='armour-item'></div>
+            
+            <div class='armour-header'>Left Arm 2</div>
+            <div class='armour-item'></div>
+            <div class='armour-item'></div>
+            <div class='armour-item'></div>
+            
+            <div class='armour-header'>Right Leg 1</div>
+            <div class='armour-item'></div>
+            <div class='armour-item'></div>
+            <div class='armour-item'></div>
+            
+            <div class='armour-header'>Right Leg 2</div>
+            <div class='armour-item'></div>
+            <div class='armour-item'></div>
+            <div class='armour-item'></div>
+            
+            <div class='armour-header'>Left Leg 1</div>
+            <div class='armour-item'></div>
+            <div class='armour-item'></div>
+            <div class='armour-item'></div>
+            
+            <div class='armour-header'>Left Leg 2</div>
+            <div class='armour-item'></div>
+            <div class='armour-item'></div>
+            <div class='armour-item'></div>
+        </div>
+    </div>
+</div>
+
+<!-- Sheet Worker Scripts -->
+<script type="text/worker">
+    on("change:crowns change:shillings change:pennies", function() {
+        getAttrs(["crowns", "shillings", "pennies"], function(values) {
+            var crowns;
+            var shillings;
+            var pennies;
+            var total;
+            
+            total = (Number(values.crowns)*240)+(Number(values.shillings)*12)+Number(values.pennies);
+            crowns = Math.floor(total/240);
+            shillings = Math.floor((total-(crowns*240))/12);
+            pennies = Number(total-(crowns*240)-(shillings*12));
+            
+            setAttrs({
+                money_weight: (Number(values.crowns)+Number(values.shillings)+Number(values.pennies))/2,
+                money_total: crowns + "GP " + shillings + "/- " + pennies + "d"
+            });
+        });
+    });
+    
+    on("change:repeating_inventory:invWeight change:repeating_inventory:invEquip", function() {
+        getAttrs(["repeating_inventory_invWeight", "repeating_inventory_invEquip"], function(values) {
+            setAttrs({repeating_inventory_invCalcWeight: Number(values.repeating_inventory_invWeight)*Number(values.repeating_inventory_invEquip)});
+        });
+    });
+    
+
+    on('change:repeating_inventory:invWeight change:repeating_inventory:invEquip remove:repeating_inventory', function() {
+	    repeatingSum("invTotalWeight","inventory","invCalcWeight");
+    });
+    
+    /* ===== PARAMETERS ==========
+    Repeating sum function curtesy of GiGs (https://app.roll20.net/users/157788/gigs) from the
+    Roll20 wiki: https://wiki.roll20.net/RepeatingSum
+    destination = the name of the attribute that stores the total quantity
+    section = name of repeating fieldset, without the repeating_
+    fields = the name of the attribute field to be summed
+          can be a single attribute: 'weight'
+          or an array of attributes: ['weight','number','equipped']
+    multiplier (optional) = a multiplier to to entire fieldset total. For instance, if summing coins of weight 0.02, might want to multiply the final total by 0.02.
+    */
+    const repeatingSum = (destination, section, fields, multiplier = 1) => {
+        if (!Array.isArray(fields)) fields = [fields];
+        getSectionIDs(`repeating_${section}`, idArray => {
+            const attrArray = idArray.reduce( (m,id) => [...m, ...(fields.map(field => `repeating_${section}_${id}_${field}`))],[]);
+            getAttrs(attrArray, v => {
+                console.log("===== values of v: "+ JSON.stringify(v) +" =====");
+                     // getValue: if not a number, returns 1 if it is 'on' (checkbox), otherwise returns 0..
+                const getValue = (section, id,field) => parseFloat(v[`repeating_${section}_${id}_${field}`], 10) || (v[`repeating_${section}_${id}_${field}`] === 'on' ? 1 : 0); 
+                const sumTotal = idArray.reduce((total, id) => total + fields.reduce((subtotal,field) => subtotal * getValue(section, id,field),1),0);
+                setAttrs({[destination]: sumTotal * multiplier});    
+            });
+        });
+    };
+
+    on("change:earnedxp change:spentxp", function() {
+        getAttrs(["earnedxp", "spentxp"], function(values) {
+            setAttrs({availablexp: Number(values.earnedxp)-Number(values.spentxp)});
+        });
+    });
+    
+    on("change:SP_M change:AT_M", function() {
+        getAttrs(["SP_M", "AT_M"], function(values) {
+            setAttrs({CP_M: Number(values.SP_M)+Number(values.AT_M)});
+        });
+    });
+    
+    on("change:SP_WS change:AT_WS", function() {
+        getAttrs(["SP_WS", "AT_WS"], function(values) {
+            setAttrs({CP_WS: Number(values.SP_WS)+Number(values.AT_WS)});
+        });
+    });
+    
+    on("change:SP_BS change:AT_BS", function() {
+        getAttrs(["SP_BS", "AT_BS"], function(values) {
+            setAttrs({CP_BS: Number(values.SP_BS)+Number(values.AT_BS)});
+        });
+    });
+    
+    on("change:SP_S change:AT_S", function() {
+        getAttrs(["SP_S", "AT_S"], function(values) {
+            setAttrs({CP_S: Number(values.SP_S)+Number(values.AT_S)});
+        });
+    });
+    
+    on("change:SP_T change:AT_T", function() {
+        getAttrs(["SP_T", "AT_T"], function(values) {
+            setAttrs({CP_T: Number(values.SP_T)+Number(values.AT_T)});
+        });
+    });
+    
+    on("change:SP_W change:AT_W", function() {
+        getAttrs(["SP_W", "AT_W"], function(values) {
+            var maxwounds = Number(values.SP_W)+Number(values.AT_W);
+            setAttrs({
+                CP_W: maxwounds,
+                CW_max: maxwounds,
+                wdshead_max: Math.floor(maxwounds*0.75),
+                wdsrarm_max: maxwounds,
+                wdslarm_max: maxwounds,
+                wdsbody_max: Math.floor(maxwounds*1.5),
+                wdsrleg_max: Math.floor(maxwounds*1.1),
+                wdslleg_max: Math.floor(maxwounds*1.1)
+            });
+        });
+    });
+    
+    on("change:SP_I change:AT_I", function() {
+        getAttrs(["SP_I", "AT_I"], function(values) {
+            setAttrs({CP_I: Number(values.SP_I)+Number(values.AT_I)});
+        });
+    });
+    
+    on("change:SP_A change:AT_A", function() {
+        getAttrs(["SP_A", "AT_A"], function(values) {
+            setAttrs({CP_A: Number(values.SP_A)+Number(values.AT_A)});
+        });
+    });
+    
+    on("change:SP_Dex change:AT_Dex", function() {
+        getAttrs(["SP_Dex", "AT_Dex"], function(values) {
+            setAttrs({CP_Dex: Number(values.SP_Dex)+Number(values.AT_Dex)});
+        });
+    });
+    
+    on("change:SP_Ld change:AT_Ld", function() {
+        getAttrs(["SP_Ld", "AT_Ld"], function(values) {
+            setAttrs({CP_Ld: Number(values.SP_Ld)+Number(values.AT_Ld)});
+        });
+    });
+    
+    on("change:SP_Int change:AT_Int", function() {
+        getAttrs(["SP_Int", "AT_Int"], function(values) {
+            setAttrs({CP_Int: Number(values.SP_Int)+Number(values.AT_Int)});
+        });
+    });
+    
+    on("change:SP_Cl change:AT_Cl", function() {
+        getAttrs(["SP_Cl", "AT_Cl"], function(values) {
+            setAttrs({CP_Cl: Number(values.SP_Cl)+Number(values.AT_Cl)});
+        });
+    });
+    
+    on("change:SP_WP change:AT_WP", function() {
+        getAttrs(["SP_WP", "AT_WP"], function(values) {
+            setAttrs({CP_WP: Number(values.SP_WP)+Number(values.AT_WP)});
+        });
+    });
+    
+    on("change:SP_Fel change:AT_Fel", function() {
+        getAttrs(["SP_Fel", "AT_Fel"], function(values) {
+            setAttrs({CP_Fel: Number(values.SP_Fel)+Number(values.AT_Fel)});
+        });
+    });
+    
+     on("change:SP_M change:AT_M", function() {
+        getAttrs(["SP_M", "AT_M"], function(values) {
+            var mult = Number(values.SP_M) + Number(values.AT_M);
+            var mphcautious = 0;
+            var mphstandard = 0;
+            var mphrunning = 0;
+            
+            switch (mult) {
+                case 1:
+                    mphcautious = 0.5;
+                    mphstandard = 1;
+                    mphrunning = 3.5;
+                    break;
+                case 2:
+                    mphcautious = 1;
+                    mphstandard = 1.75;
+                    mphrunning = 7.25;
+                    break;
+                case 3:
+                    mphcautious = 1.25;
+                    mphstandard = 2.75;
+                    mphrunning = 10.75;
+                    break;
+                case 4:
+                    mphcautious = 1.75;
+                    mphstandard = 3.5;
+                    mphrunning = 14.25;
+                    break;
+                case 5:
+                    mphcautious = 2.25;
+                    mphstandard = 4.5;
+                    mphrunning = 18;
+                    break;
+                case 6:
+                    mphcautious = 2.75;
+                    mphstandard = 5.25;
+                    mphrunning = 21.5;
+                    break;
+                case 7:
+                    mphcautious = 3;
+                    mphstandard = 6.25;
+                    mphrunning = 25;
+                    break;
+                case 8:
+                    mphcautious = 3.5;
+                    mphstandard = 7.25;
+                    mphrunning = 28.75;
+                    break;
+                case 9:
+                    mphcautious = 4;
+                    mphstandard = 8;
+                    mphrunning = 32.25;
+                    break;
+                case 10:
+                    mphcautious = 4.5;
+                    mphstandard = 9;
+                    mphrunning = 35.75;
+                    break;
+                case 11:
+                    mphcautious = 5;
+                    mphstandard = 9.75;
+                    mphrunning = 39.5;
+                    break;
+                case 12:
+                    mphcautious = 5.25;
+                    mphstandard = 10.75;
+                    mphrunning = 43;
+                    break;
+                case 13:
+                    mphcautious = 5.75;
+                    mphstandard = 11.75;
+                    mphrunning = 46.5;
+                    break;
+                case 14:
+                    mphcautious = 6.25;
+                    mphstandard = 12.5;
+                    mphrunning = 50;
+                    break;
+                case 15:
+                    mphcautious = 6.75;
+                    mphstandard = 13.5;
+                    mphrunning = 53.75;
+                    break;
+                case 16:
+                    mphcautious = 7.25;
+                    mphstandard = 14.25;
+                    mphrunning = 57.25;
+                    break;
+                case 17:
+                    mphcautious = 7.75;
+                    mphstandard = 15.25;
+                    mphrunning = 60.75;
+                    break;
+                case 18:
+                    mphcautious = 8;
+                    mphstandard = 16;
+                    mphrunning = 64.5;
+                    break;
+                case 19:
+                    mphcautious = 8.5;
+                    mphstandard = 17;
+                    mphrunning = 68;
+                    break;
+                case 20:
+                    mphcautious = 9;
+                    mphstandard = 18;
+                    mphrunning = 71.5;
+                    break;
+            };
+            
+            setAttrs({
+                mvmt_rnd_cautious: mult*6,
+                mvmt_min_cautious: mult*36,
+                mvmt_mph_cautious: mphcautious,
+                
+                mvmt_rnd_standard: mult*12,
+                mvmt_min_standard: mult*72,
+                mvmt_mph_standard: mphstandard,
+                
+                mvmt_rnd_running: mult*48,
+                mvmt_min_running: mult*288,
+                mvmt_mph_running: mphrunning
+            });
+        });
+    });
+    
+</script>
+
+<!-- Roll Templates -->
+<rolltemplate class="sheet-rolltemplate-standard">
+    <div class="sheet-template-container">
+        <div class="sheet-template-header">
+            {{rname}}
+        </div>
+        <div class="sheet-template-name">
+            {{name}}
+        </div>
+        <div class="sheet-template-result">
+            {{#dice}}
+                Roll: {{dice}} vs. {{against}}
+                <br>
+                Result: {{#rollLess() dice against-20}}Critical{{/rollLess() dice against-20}}
+                {{#rollLess() dice perfect}}Perfect{{/rollLess() dice perfect}}
+                {{#rollLess() dice against}}Success{{/rollLess() dice against}}
+                {{#rollBetween() dice botch fumble}}Botch{{/rollBetween() dice botch fumble}}
+                {{#rollGreater() dice fumble}}Fumble{{/rollGreater() dice fumble}}
+                {{#rollGreater() dice against}}Failure{{/rollGreater() dice against}}
+            {{/dice}}
+        </div>
+    </div>
+</rolltemplate>
